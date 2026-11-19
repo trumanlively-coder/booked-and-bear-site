@@ -1,7 +1,6 @@
 // APP LINKS — the only place to change where the buttons go.
-// Swap these for the permanent app URL once Booked and Bear is hosted
-// (for example a Render URL such as https://booked-and-bear.onrender.com).
+// Swap these if the permanent app URL changes.
 window.BAB_LINKS = {
-  owner: 'https://bookedbear-anonymous-3000.exp.direct/owner/',
-  booking: 'https://booking-anonymous-3000.exp.direct/book',
+  owner: 'https://booked-and-bear-slvp.onrender.com/owner/',
+  booking: 'https://booked-and-bear-slvp.onrender.com/book',
 };
