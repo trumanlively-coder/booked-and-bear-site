@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Booked and Bear</title>
+  <meta name="description" content="Booked and Bear is the owner app for Truman's Barber Shop Style.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="config.js"></script>
+</head>
+<body class="bab-home">
+  <header class="bab-hero">
+    <div class="wrap">
+      <img class="bab-logo" src="icons/icon-192.png" alt="Booked and Bear" width="96" height="96">
+      <h1 class="brand">Booked and Bear</h1>
+      <p class="tagline">The owner app for Truman's Barber Shop Style</p>
+      <a class="btn block bab-open" id="openApp" href="#">Open Booked and Bear</a>
+      <p class="bab-book-link"><a id="bookingLink" href="#">Customer booking</a></p>
+    </div>
+  </header>
+
+  <main class="wrap bab-main">
+    <p class="bab-lead">Booked and Bear is the shop’s owner app. It is where you run the calendar, keep client profiles, and text from the business number. Customers use a separate booking page; they never see this app.</p>
+
+    <h2 class="section">What you can do</h2>
+    <ul class="bab-features">
+      <li>
+        <h3>Calendar that shows the day</h3>
+        <p>Each day on the calendar shows whether it has appointments or blocked time, so a day is never just a blank square.</p>
+      </li>
+      <li>
+        <h3>Block time or add an appointment</h3>
+        <p>Open a day to block time, or put in an appointment for a person, including their details and the usual appointment actions.</p>
+      </li>
+      <li>
+        <h3>Client profiles, A–Z</h3>
+        <p>Every booking saves a client profile. Search the list, open a person, and see their history.</p>
+      </li>
+      <li>
+        <h3>Import from Square</h3>
+        <p>Bring in clients from a Square Customer Directory CSV. You preview the file and confirm before anything is saved.</p>
+      </li>
+      <li>
+        <h3>Today’s roster and texting</h3>
+        <p>See today’s clients, check the ones you want, and send texts from the business number, (702) 601-8354. Mass texts ask for a confirm first.</p>
+      </li>
+      <li>
+        <h3>Buffers and exact service lengths</h3>
+        <p>Each appointment uses that service’s exact length. You can add a short buffer before or after, which customers never see.</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="bab-footer">
+    <div class="wrap">
+      <p class="bab-shop">Truman's Barber Shop Style</p>
+      <p><a href="tel:+17026018354">(702) 601-8354</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var links = window.BAB_LINKS || {};
+      var open = document.getElementById('openApp');
+      var book = document.getElementById('bookingLink');
+      if (open && links.owner) open.setAttribute('href', links.owner);
+      if (book && links.booking) book.setAttribute('href', links.booking);
+    })();
+  </script>
+</body>
+</html>

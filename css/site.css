@@ -1,0 +1,70 @@
+@font-face { font-family: 'Bebas Neue'; src: url('../fonts/BebasNeue_400Regular.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'Playfair Display'; src: url('../fonts/PlayfairDisplay_400Regular_Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('../fonts/Inter_400Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('../fonts/Inter_600SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('../fonts/Inter_700Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+
+:root {
+  --bg: #0b0b0b; --panel: #151515; --panel2: #1d1d1d; --line: #2c2c2c;
+  --gold: #c9a24a; --gold2: #e6c879; --text: #f3efe6; --muted: #a59f93;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.45; -webkit-text-size-adjust: 100%; }
+a { color: var(--gold2); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.brand { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; font-size: 40px; line-height: 1; color: var(--text); margin: 0; }
+.tagline { font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold2); margin: 8px auto 22px; font-size: 17px; max-width: 22em; }
+h2.section { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; margin: 26px 0 4px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--gold); color: #111; border: none; border-radius: 12px; padding: 14px 20px; font-weight: 700; font-size: 18px; min-height: 52px; text-decoration: none; }
+.btn:hover { background: var(--gold2); }
+.btn.block { width: 100%; }
+
+.bab-home { min-height: 100vh; display: flex; flex-direction: column; }
+.bab-hero {
+  text-align: center;
+  padding: 36px 0 28px;
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(ellipse at top, #1d1709 0%, var(--bg) 70%);
+}
+.bab-logo {
+  width: 96px; height: 96px; border-radius: 22px;
+  display: block; margin: 0 auto 14px;
+  box-shadow: 0 0 0 2px var(--gold), 0 8px 30px rgba(201,162,74,.25);
+}
+.bab-open { max-width: 360px; margin: 0 auto; }
+.bab-book-link { margin: 16px 0 0; font-size: 15px; }
+.bab-book-link a { color: var(--gold2); font-weight: 600; }
+.bab-main { flex: 1; padding-top: 8px; padding-bottom: 24px; }
+.bab-lead { color: var(--text); font-size: 16.5px; line-height: 1.5; margin: 20px 0 8px; }
+.bab-features { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 10px; }
+.bab-features li {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 16px 14px;
+}
+.bab-features h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--gold2);
+  margin: 0 0 6px;
+}
+.bab-features p { margin: 0; color: var(--muted); font-size: 14.5px; }
+.bab-footer {
+  margin: 12px 0 0;
+  padding: 22px 0 36px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+.bab-shop { font-weight: 600; color: var(--text); margin: 0 0 4px; }
+.bab-footer p { margin: 0; }
+.bab-footer a { color: var(--gold2); text-decoration: none; font-weight: 600; }
+@media (min-width: 720px) {
+  .bab-features { grid-template-columns: 1fr 1fr; }
+  .bab-hero { padding: 48px 0 36px; }
+}
